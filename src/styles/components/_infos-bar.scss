@@ -1,0 +1,95 @@
+@use '../variables';
+
+.infos-bar {
+    background-color: variables.$secondaryTextColor;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 24px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    transition: background-color .5s ease;
+    z-index: 1;
+    
+
+    &__infos {
+        display: flex;
+        gap: 40px;
+
+
+        &__item {
+            font-size: 14px;
+            color: variables.$textColor;
+
+            b {
+                color: #3CB371;
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: 667px) {
+        display: block;
+        max-height: 90px;
+       
+        &__infos {
+            display: flex;
+
+            &__item {
+                
+                margin-bottom: 10px;
+                padding-right: 30px;
+                
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__infos {
+            gap: 20px;
+        
+        }
+    }
+
+    .contador {
+        display: flex;
+        
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+       
+        
+    &__timer {
+        display: flex;
+        font-size: 50px;
+        color: #3CB371;
+        font-family: "Ubuntu Sans Mono", monospace;
+        margin: 0 auto;
+
+        h4 {
+            margin-right: 24px;
+            font-family: "Ubuntu Sans Mono", monospace;
+            color: #FF0000;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 24px;
+            
+           }
+        
+        @media (max-width: 640px) {
+            
+            display: flex;
+             width: 100%;
+             font-size: 20px;
+
+            
+             
+         }
+        
+    }
+
+    }
+}

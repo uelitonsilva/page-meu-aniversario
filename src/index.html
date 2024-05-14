@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>evento Aniversario</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="infos-bar">
+        <ul class="infos-bar__infos">
+          <li class="infos-bar__infos__item">
+            <b>Localização</b>
+            Clube Aqui pertinho
+          </li>
+
+          <li class="infos-bar__infos__item">
+            <b>Quando</b>
+            15/04/2025 às 19hrs
+          </li>
+        </ul>
+        <div class="contador">
+          
+          <span class="contador__timer" id="contador"> </span>
+        </div>
+      </div>
+      <div class="container">
+        
+        <p class="hero__text">
+          Grande evento em comemoração ao aniversario de Ueliton
+        </p>
+     
+      </div>
+      <div class="button">
+        <a class="button button--primary" href="#">Marque sua Presença</a>
+      </div>
+    </header>
+
+    <section class="event event--frontend">
+      <div class="container" data-aos="fade-down">
+        <div class="event__details">
+          <h2 class="event__details__title">Musicas</h2>
+          <p class="event__details__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium aspernatur modi commodi maiores iure ut consequatur
+            minima labore repudiandae consectetur hic adipisci quo expedita
+            eaque nam atque officiis, vitae sit!
+          </p>
+        </div>
+        <img class="event__image" src="./images/musica.jpg" alt="show musica" />
+      </div>
+    </section>
+
+    <section class="event event--ui-ux">
+      <div class="container" data-aos="fade-up">
+        <div class="event__details">
+          <h2 class="event__details__title">Comidas e bebidas</h2>
+          <p class="event__details__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium aspernatur modi commodi maiores iure ut consequatur
+            minima labore repudiandae consectetur hic adipisci quo expedita
+            eaque nam atque officiis, vitae sit!
+          </p>
+        </div>
+        <img class="event__image" src="./images/comidas.jpg" alt="churrasco" />
+      </div>
+    </section>
+    <footer class="footer">
+        
+        <p class="footer__text">Saiba mais em nossas redes sociais</p>
+       <div class="footer__social">
+        <a  class="footer__social__item"><img src="./images/instagram.png" alt="instagram"></a>
+        <a class="footer__social__item" href=""><img src="./images/whatsapp.png" alt="whatsapp"></a>
+        <a class="footer__social__item" href=""><img src="./images/facebook.png" alt="facebook"></a>
+    </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+@use '../variables';
+
+.button {
+
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+   margin-top: 5%;
+    align-items: center;
+
+    &--primary {
+        color: variables.$textColor;
+        background-color: #3CB371;
+        text-align: center;
+    }
+
+    @media (max-width: 640px) {
+       display: flex;
+        width: 80%;
+       padding-left: 20px;
+       
+        
+        
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+       align-items: center;
+       margin-left: auto;
+       margin-right: auto;
+         
+     }
+}

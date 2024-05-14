@@ -1,0 +1,25 @@
+.footer {
+    
+    background-color: #2F4F4F;
+    align-items: center;
+        justify-content: center;
+       
+    &__social, &__text {
+        display: flex;
+        width: 100%;
+        margin-left: 37%;
+        
+       &__item {
+        margin: 0 16px;
+       }
+        
+       @media (max-width: 667px) {
+        margin-left: 20%;
+       }
+         
+    }
+
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+}
